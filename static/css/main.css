@@ -1,3 +1,53 @@
-body {
-  background: #000;
+:root{
+  --color-verde: #56de72;
+  --color-negro: #111;
+}
+
+body{
+  min-height: 100vh;
+}
+
+header{
+  padding: 1.5rem;
+  padding-bottom: .8rem;
+}
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .logo figure{
+    width: 58%;
+    margin: auto;
+  }
+  .logo figure img{
+    width: 100%;
+  }
+
+nav{
+
+}
+  nav ul li{
+    margin: 0 10px;
+  }
+  nav ul li a{
+    background: var(--color-verde);
+    color: var(--color-negro) !important;
+    border-radius: 7px;
+    padding: 5px 1rem 6px 1rem !important;
+    font-weight: 500;
+  }
+
+main{
+  min-height: 80vh;
+  background: linear-gradient(
+    -45deg
+    , var(--color-verde), transparent);
+}
+
+.contain-products{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px 5px;
 }
